@@ -3,8 +3,10 @@
 }
 
 .dropdown {
-  /* visibility: hidden; */
-  display: none;
+  visibility: visible;
+  display: inline-block;
+  position: relative;
+  padding-right: 33%;
 }
 
 body {
@@ -29,7 +31,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  text-align: right;
+  /* text-align: center; */
   padding-right: 20px;
 }
 
@@ -60,6 +62,7 @@ p {
   font-size: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  text-align: left;
 }
 
 footer {
@@ -73,46 +76,56 @@ footer {
     display: none;
 } */
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 700px) {
   nav {
-    /* text-align: center; */
+    text-align: center;
   }
   p {
-    text-align: left;
+    text-align: center;
   }
   .pictures {
     height: auto;
-    min-width: 100%;
+    max-width: 75%;
   }
   .dropdown {
-    position: relative;
-    display: inline-block;
-    padding-right: 33%;
+    /* visibility: hidden;
+    display: block; */
+    display: none;
   }
   .item_menu {
-    visibility: hidden;
+    visibility: visible;
   }
   .dropdown-content,
   .dropdown-content a {
     visibility: visible;
   }
+  /* #nav_link {
+    visibility: visible;
+  } */
+  .nav-links {
+    visibility: visible;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 1200px) {
   p {
-    text-align: left;
+    text-align: center;
   }
   .pictures {
-    width: 75%;
+    max-width: 75%;
     height: auto;
   }
   nav {
-    text-align: center;
+    text-align: right;
   }
-  /* .dropdown {
-        visibility: hidden;
-        display: block; 
-    } */
+  .dropdown {
+    /* visibility: hidden;
+    display: block; */
+    display: none;
+  }
+  .item_menu {
+    visibility: visible;
+  }
 }
 
 .linkto {
@@ -121,6 +134,7 @@ footer {
 
 .item_menu {
   color: #1c304a;
+  /* visibility: hidden; */
 }
 
 html {
@@ -133,7 +147,7 @@ html {
 }
 
 .pictures {
-  width: 75%;
+  width: 100%;
   height: auto;
 }
 
@@ -153,4 +167,18 @@ html {
 
 /* .dropdown {
     visibility: hidden;
+} */
+
+.dropdown-content,
+.dropdown-content a {
+  visibility: visible;
+}
+
+.nav-links {
+  visibility: hidden;
+  display: inline-block;
+}
+
+/* #nav_link {
+  visibility: hidden;
 } */

@@ -1,152 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio</title>
-        <meta name="description" content="Portfolio">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index2.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <nav role="navigation" class="menu">
+  <body>
+    <nav role="navigation" class="menu">
+      <style>
+        /* Style The Dropdown Button */
+        .dropbtn {
+          background-color: #1c304a;
+          color: #00cfff;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
 
-                
-                <style>
-                        /* Style The Dropdown Button */
-                        .dropbtn {
-                          background-color: #1C304A;
-                          color: #00CFFF;
-                          padding: 16px;
-                          font-size: 16px;
-                          border: none;
-                          cursor: pointer;
-                        }
-                        
-                        /* The container <div> - needed to position the dropdown content */
-                        /* .dropdown {
+        /* The container <div> - needed to position the dropdown content */
+        /* .dropdown {
                           position: relative;
                           display: inline-block;
                         } */
-                        
-                        /* Dropdown Content (Hidden by Default) */
-                        .dropdown-content {
-                          display: none;
-                          position: absolute;
-                          background-color: #f9f9f9;
-                          min-width: 160px;
-                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                          z-index: 1;
-                        }
-                        
-                        /* Links inside the dropdown */
-                        .dropdown-content a {
-                          color: #1C304A;
-                          padding: 12px 16px;
-                          text-decoration: none;
-                          display: block;
-                        }
-                        
-                        /* Change color of dropdown links on hover */
-                        .dropdown-content a:hover {background-color: #B3EFFF}
-                        
-                        /* Show the dropdown menu on hover */
-                        .dropdown:hover .dropdown-content {
-                          display: block;
-                        }
-                        
-                        /* Change the background color of the dropdown button when the dropdown content is shown */
-                        .dropdown:hover .dropbtn {
-                          background-color: #B3EFFF;
-                        }
-                        </style>
-                        
-                        <div class="dropdown">
-                          <button class="dropbtn">+</button>
-                          <div class="dropdown-content">
-                                <a href="#about-me" class="item_menu">About</a>
-                                <a href="#portfolio" class="item_menu">Projects</a>
-                                <a href="#contact-info" class="item_menu">Contact</a> 
-                          </div>
-                        </div>
 
-		        <a href="#about-me" class="item_menu">About</a>
-		        <a href="#portfolio" class="item_menu">Projects</a>
-		        <a href="#contact-info" class="item_menu">Contact</a>          
-        </nav>
-        
-        <main role="main">
-            <header role="banner">
-                <h1>Hi, I'm Ben! I'm a full-stack developer based in Los Angeles</h1>
-            </header>
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+        }
 
-            <section class="about" id="about-me">
-                <h2>About Me</h2>
-                <p>I have a passion for solving problems and building unique websites and applicaitons.
-                    Putting the pieces together and watching it all come to life is what excites me the most.
-                    I would love nothing more than to be a part of a team of amazing programmers, contirubting
-                    to help create greatness.
-                </p>
-                <p>Outside of writing code, I'm currently a Field Radio Operator in the United States Marine Corps Reserve,
-                    and I enjoy playing guitar, loud concerts, and drinking cold beer with friends.
-                </p>
-            </section>
+        /* Links inside the dropdown */
+        .dropdown-content a {
+          color: #1c304a;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
 
-            <section class="projects" id="portfolio">
-                <h2>Portfolio</h2>
-                <h3>Space Quiz Web App</h3>
-                <p>The goal of this project was to build a responsively designed, functioning
-                    quiz that would seamlessly allow users to navigage through one question at
-                    a time, while displaying their current score and question number, alerting
-                    them to any correct and incorrect answers, and displaying their final score
-                    at the end with a chance to retake the quiz.
-                </p>
-                <p>I built this quiz using HTML, CSS, JavaScript, and jQuery.</p>
-                <a href="https://b-starr7.github.io/quiz-app-final/" target="_blank" class="live-site">Live App</a>
-                <br>
-                <br>
-                <a href="https://github.com/B-Starr7/quiz-app-final" target="_blank" class="repo">GitHub Repo</a> 
-                <br>
-                <br>
-                <img src="images/Space-Quiz-App-Mini.png" class="pictures" alt="Space Quiz App Screenshot"/>
-                <br>
-                <!-- <img src="images/Quiz-App-JS.png" class="pictures" alt="Quiz App JavaScript"/> -->
-                <hr style="border: 2px solid #1C304A;"/>
-                <h3>Asynchronous API Web App</h3>
-                <p>For this project, the goal was to build an app that utilizes two different API's 
-                    to achieve a single result. In this case, the API's for Google Maps and Ticketmaster 
-                    were used. Users are able to search for a type of event (such as jazz music) in the 
-                    city of their choosing, which will then display a map with 'Markers' dropped for each 
-                    event, alongside a list of the upcoming events in order from earliest to latest date 
-                    showing. Users can navigate through either option to be taken to a website where they 
-                    can purchase tickets to their selected events.
-                </p>
-                <p>This app was built using a combination of HTML, CSS, JavaScript, and jQuery.</p>
-                <a href="https://b-starr7.github.io/event-finder/" target="_blank" class="live-site">Live App</a>
-                <br>
-                <br>
-                <a href="https://github.com/B-Starr7/event-finder" target="_blank" class="repo">GitHub Repo</a>
-                <br>
-                <br>
-                <img src="images/Event-Finder-Form.png" class="pictures" alt="Event Finder Form"/>
-                <br>
-                <br>
-                <img src="images/Mobile-Tablet-Results.png" class="pictures" alt="Event Results List"/>
-                <br>
-                <hr style="border: 2px solid #1C304A;"/>
-            </section>
-        </main>
-        
-        <footer role="contact" id="contact-info">
-            <a href="mailto:bcstarr47@gmail.com" class="linkto">Email</a>
-            <a href="https://www.linkedin.com/in/ben-starr/" target="_blank" class="linkto">LinkedIn</a>    
-            <a href="https://github.com/B-Starr7" target="_blank" class="linkto">GitHub</a>
-        </footer>
-        <!-- script src="" async defer></script> -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+          background-color: #b3efff;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+          background-color: #b3efff;
+        }
+      </style>
+
+      <div class="dropdown">
+        <button class="dropbtn">+</button>
+        <div class="dropdown-content">
+          <a href="#about-me" class="item_menu">About</a>
+          <a href="#portfolio" class="item_menu">Projects</a>
+          <a href="#contact-info" class="item_menu">Contact</a>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#about-me" class="item_menu" id="nav_link">About</a>
+        <a href="#portfolio" class="item_menu" id="nav_link">Projects</a>
+        <a href="#contact-info" class="item_menu" id="nav_link">Contact</a>
+      </div>
+    </nav>
+
+    <main role="main">
+      <header role="banner">
+        <h1>Hi, I'm Ben! I'm a full-stack developer based in Los Angeles</h1>
+      </header>
+
+      <section class="about" id="about-me">
+        <h2>About Me</h2>
+        <p>
+          I have a passion for solving problems and building unique websites and
+          applicaitons. Putting the pieces together and watching it all come to
+          life is what excites me the most. I would love nothing more than to be
+          a part of a team of amazing programmers, contirubting to help create
+          greatness.
+        </p>
+        <p>
+          Outside of writing code, I'm currently a Field Radio Operator in the
+          United States Marine Corps Reserve, and I enjoy playing guitar, loud
+          concerts, and drinking cold beer with friends.
+        </p>
+      </section>
+
+      <section class="projects" id="portfolio">
+        <h2>Portfolio</h2>
+        <h3>Space Quiz Web App</h3>
+        <p>
+          The goal of this project was to build a responsively designed,
+          functioning quiz that would seamlessly allow users to navigage through
+          one question at a time, while displaying their current score and
+          question number, alerting them to any correct and incorrect answers,
+          and displaying their final score at the end with a chance to retake
+          the quiz.
+        </p>
+        <p>I built this quiz using HTML, CSS, JavaScript, and jQuery.</p>
+        <a
+          href="https://b-starr7.github.io/quiz-app-final/"
+          target="_blank"
+          class="live-site"
+          >Live App</a
+        >
+        <br />
+        <br />
+        <a
+          href="https://github.com/B-Starr7/quiz-app-final"
+          target="_blank"
+          class="repo"
+          >GitHub Repo</a
+        >
+        <br />
+        <br />
+        <img
+          src="images/Space-Quiz-App-Mini.png"
+          class="pictures"
+          alt="Space Quiz App Screenshot"
+        />
+        <br />
+        <!-- <img src="images/Quiz-App-JS.png" class="pictures" alt="Quiz App JavaScript"/> -->
+        <hr style="border: 2px solid #1C304A;" />
+        <h3>Asynchronous API Web App</h3>
+        <p>
+          For this project, the goal was to build an app that utilizes two
+          different API's to achieve a single result. In this case, the API's
+          for Google Maps and Ticketmaster were used. Users are able to search
+          for a type of event (such as jazz music) in the city of their
+          choosing, which will then display a map with 'Markers' dropped for
+          each event, alongside a list of the upcoming events in order from
+          earliest to latest date showing. Users can navigate through either
+          option to be taken to a website where they can purchase tickets to
+          their selected events.
+        </p>
+        <p>
+          This app was built using a combination of HTML, CSS, JavaScript, and
+          jQuery.
+        </p>
+        <a
+          href="https://b-starr7.github.io/event-finder/"
+          target="_blank"
+          class="live-site"
+          >Live App</a
+        >
+        <br />
+        <br />
+        <a
+          href="https://github.com/B-Starr7/event-finder"
+          target="_blank"
+          class="repo"
+          >GitHub Repo</a
+        >
+        <br />
+        <br />
+        <img
+          src="images/Event-Finder-Form.png"
+          class="pictures"
+          alt="Event Finder Form"
+        />
+        <br />
+        <br />
+        <img
+          src="images/Mobile-Tablet-Results.png"
+          class="pictures"
+          alt="Event Results List"
+        />
+        <br />
+        <hr style="border: 2px solid #1C304A;" />
+      </section>
+    </main>
+
+    <footer role="contact" id="contact-info">
+      <a href="mailto:bcstarr47@gmail.com" class="linkto">Email</a>
+      <a
+        href="https://www.linkedin.com/in/ben-starr/"
+        target="_blank"
+        class="linkto"
+        >LinkedIn</a
+      >
+      <a href="https://github.com/B-Starr7" target="_blank" class="linkto"
+        >GitHub</a
+      >
+    </footer>
+    <!-- script src="" async defer></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
 </html>
