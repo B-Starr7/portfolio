@@ -2,19 +2,25 @@
   box-sizing: border-box;
 }
 
-.dropdown {
-  visibility: visible;
-  display: inline-block;
-  position: relative;
-  padding-right: 33%;
-}
-
 body {
   font-family: "Raleway", sans-serif;
   font-size: 25px;
   text-align: center;
   line-height: 1.5;
   margin: 0px;
+}
+
+.dropdown {
+  visibility: visible;
+  display: inline-block;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  margin-left: 3px;
+}
+
+.nav-links {
+  top: 50%;
 }
 
 nav,
@@ -32,6 +38,7 @@ nav {
   right: 0;
   z-index: 10;
   padding-right: 20px;
+  height: 50px;
 }
 
 header {
